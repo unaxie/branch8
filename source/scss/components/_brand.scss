@@ -1,0 +1,13 @@
+.mainHead-brand {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-width: 125px;
+    max-height: 200px;
+    @include media-breakpoint-down(sm) {
+        width: 90%;
+    }
+}
+.mainFooter-brand{
+    max-width: 70px;
+}

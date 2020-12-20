@@ -1,0 +1,46 @@
+.mainHead {
+    .mainHead-tools {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @include media-breakpoint-up(md) {
+            justify-content: flex-end;
+        }
+
+        @include media-breakpoint-down(sm) {
+            justify-content: space-between;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            @include media-breakpoint-down(sm) {
+                width: 30%;
+
+            }
+        }
+
+        &-item-logo {
+            justify-content: center;
+
+        }
+
+        &-item-right {
+            justify-content: flex-end;
+        }
+
+        .btn {
+            @include media-breakpoint-down(sm) {
+                padding-left: $spacer/4;
+                padding-right: $spacer/4;
+            }
+
+            @include media-breakpoint-up(md) {
+                padding-left: $spacer/2;
+                padding-right: $spacer/2;
+            }
+        }
+    }
+}

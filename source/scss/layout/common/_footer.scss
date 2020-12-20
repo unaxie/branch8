@@ -1,0 +1,83 @@
+.footer {
+    background-color: #bfcece;
+    color: $gray-700;
+
+    a {
+        color: $gray-700;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-links-item {
+        margin-bottom: $spacer;
+    }
+
+    .svg-icon {
+        height: inherit;
+        margin-right: $spacer/2;
+    }
+
+    .payment-options {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        flex-wrap: wrap;
+
+        @include media-breakpoint-up(lg) {
+            width: 200px;
+
+        }
+    }
+
+    .payment-icon {
+        margin-right: $spacer/3;
+        margin-bottom: $spacer/3;
+
+        &>svg {
+            border-radius: 2px;
+            height: 24px;
+            width: 38px;
+        }
+    }
+
+    .newsletter {
+        display: flex;
+
+        &>input.email {
+            position: relative;
+            display: inline-block;
+            padding: $spacer/2 $spacer;
+            text-align: left;
+            cursor: pointer;
+            border: 1px solid $gray-700;
+            border-radius: 0;
+            outline: 0;
+            background-color: transparent;
+        }
+
+        &>input.submit {
+            letter-spacing: 2px;
+            color: $white;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            background-color: #b4bebe;
+            border: 1px solid #b4bebe;
+            border-radius: 0;
+            padding-left: $spacer;
+            padding-right: $spacer;
+            margin-left: $spacer;
+        }
+    }
+    hr{
+        border-style: none;
+        border-top: 1px solid #d4d4d4;
+    }
+}
